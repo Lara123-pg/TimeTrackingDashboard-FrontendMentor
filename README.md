@@ -20,6 +20,8 @@ $ cd TimeTrackingDashboard-FrontendMentor
 $ code .  (Abrir o Visual Studio Code)
 ```
 
+Logo em seguida, o projeto estará em seu editor para ser executado.
+
 # Projeto
 
 Time Tracking Dashboard é um desafio da plataforma FrontendMentor, que tem o objetivo de treinar os conceitos de HTML, CSS, o pré processador Sass e, também a linguagem JavaScript.
