@@ -16,6 +16,7 @@ div.container {
 div.container main {
   display: grid;
   grid-template-areas: "a1 b1 c1 d1" "a1 e2 f2 g2";
+  padding: 6em;
   padding: 2.9em;
 }
 div.container main div.profileMenu {
@@ -166,7 +167,7 @@ div.container .attribution a {
   color: #fff;
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1000px) {
   div.container main {
     display: grid;
     grid-template-areas: "a1" "b1" "c1" "d1" "e2" "f2" "g2";

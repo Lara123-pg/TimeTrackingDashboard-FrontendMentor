@@ -8,6 +8,8 @@ div.container {
         grid-template-areas: 'a1 b1 c1 d1'
                              'a1 e2 f2 g2';
 
+        padding: 6em;                    
+        
         div.profileMenu {
             @include card($color1, 18px, 300px, 610px);
 
