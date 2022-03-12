@@ -30,6 +30,6 @@ Lara Fernanda
 
 # Licença
 
-Este projeto está sob a licença MIT -
+Este projeto está sob a licença MIT - https://github.com/Lara123-pg/TimeTrackingDashboard-FrontendMentor/blob/main/LICENSE
 
 
