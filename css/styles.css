@@ -16,8 +16,7 @@ div.container {
 div.container main {
   display: grid;
   grid-template-areas: "a1 b1 c1 d1" "a1 e2 f2 g2";
-  padding: 6em;
-  padding: 2.9em;
+  padding: 1em;
 }
 div.container main div.profileMenu {
   background-color: #1c1f4a;
