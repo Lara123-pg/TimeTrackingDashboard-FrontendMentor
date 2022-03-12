@@ -1,0 +1,11 @@
+@mixin headerStyle($color, $borderRadius, $width: '', $marginTop: '') {
+    background-color: $color;
+
+    border-radius: $borderRadius;
+
+    @if $width != '' or $marginTop != '' {
+        width: $width;
+
+        margin-top: $marginTop;
+    }
+}

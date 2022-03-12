@@ -1,0 +1,143 @@
+@media (max-width: 1320px) {
+    div.container{
+        main {
+            display: grid;
+
+            grid-template-areas: 'a1'
+                                 'b1'
+                                 'c1'
+                                 'd1'
+                                 'e2'
+                                 'f2'
+                                 'g2';
+
+            
+            div.profileMenu {
+                grid-area: a1;
+
+                width: 320px;
+                height: 240px;
+
+                margin-bottom: 1em;
+
+                header {
+                    display: flex;
+
+                    padding-right: 8em;
+                    
+                    img.profile {
+                        width: 40%;
+                        height: 40%;
+
+                        display: inline;
+
+                        border: 1px solid $color3;
+
+                        border-radius: 45px;
+                    }
+
+                    div.responsive {
+                        display: block;
+
+                        padding-left: 1.5em;
+                        padding-top: -10em;
+
+                        p.text {
+                            display: inline;
+
+                            font-size: 0.9rem;
+                        }
+
+                        h1.name {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+                nav ul{
+                    display: flex;
+
+                    padding: 1.2em;
+
+                    margin-top: -0.5em
+                }
+            }
+
+            div.work, div.play, div.study, div.exercise, div.social, div.selfCare {
+                @include card($color1, 18px, 320px, 120px);
+
+                margin-bottom: 1em;
+
+                header {
+                    width: 319px;
+                }
+
+                div.containerTitle {
+                    p.titleName {
+                        padding-bottom: 1em;
+                    }
+                }
+                
+                p.hours {
+                    font-size: 2rem;
+
+                    display: inline;
+
+                    padding-left: 1em;
+                }
+
+                p.time {
+                    display: inline;
+                }
+            }
+
+            div.work {
+                grid-area: b1;
+
+                header {
+                    @include specificHeader($work);
+                }
+            }
+
+            div.play {
+                grid-area: c1;
+
+                header.headerPlay {
+                    @include specificHeader($play);
+                }
+            }
+
+            div.study {
+                grid-area: d1;
+
+                header.headerStudy {
+                    @include specificHeader($study);
+                }
+            }
+
+            div.exercise {
+                grid-area: e2;
+
+                header.headerExercise {
+                    @include specificHeader($exercise);
+                }
+            }
+
+            div.social {
+                grid-area: f2;
+
+                header.headerSocial {
+                    @include specificHeader($social);
+                }
+            }
+
+            div.selfCare {
+                grid-area: g2;
+
+                header.headerSelfCare {
+                    @include specificHeader($selfCare);
+                }
+            }
+        }
+    }
+}

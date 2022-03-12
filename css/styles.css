@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  background-color: #0f1424;
+}
+
+div.container {
+  overflow: hidden;
+}
+div.container main {
+  display: grid;
+  grid-template-areas: "a1 b1 c1 d1" "a1 e2 f2 g2";
+  padding: 2.9em;
+}
+div.container main div.profileMenu {
+  background-color: #1c1f4a;
+  width: 300px;
+  height: 610px;
+  border-radius: 18px;
+  margin-right: 2em;
+  grid-area: a1;
+}
+div.container main div.profileMenu header {
+  background-color: #5847eb;
+  border-radius: 18px;
+  padding: 2em;
+}
+div.container main div.profileMenu header img.profile {
+  width: 55%;
+  border: 4px solid #bdc1ff;
+  border-radius: 75px;
+}
+div.container main div.profileMenu header p.text {
+  color: #bdc1ff;
+  font-weight: 300;
+  padding-top: 3em;
+}
+div.container main div.profileMenu header h1.name {
+  color: #bdc1ff;
+  font-weight: 500;
+  font-size: 2rem;
+  padding-bottom: 2em;
+}
+div.container main div.profileMenu nav ul {
+  padding: 1.2em;
+}
+div.container main div.profileMenu nav ul li {
+  list-style: none;
+  padding: 0.7em;
+}
+div.container main div.profileMenu nav ul li a {
+  color: #6f76c8;
+  font-weight: 300;
+  text-decoration: none;
+}
+div.container main div.profileMenu nav ul li a:hover {
+  color: #bdc1ff;
+  font-weight: 500;
+}
+div.container main div.profileMenu nav ul li a.selected {
+  color: #bdc1ff;
+  font-weight: 500;
+}
+div.container main div.work, div.container main div.play, div.container main div.study, div.container main div.exercise, div.container main div.social, div.container main div.selfCare {
+  background-color: #1c1f4a;
+  width: 280px;
+  height: 210px;
+  border-radius: 18px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+div.container main div.work:hover, div.container main div.play:hover, div.container main div.study:hover, div.container main div.exercise:hover, div.container main div.social:hover, div.container main div.selfCare:hover {
+  background: rgba(28, 31, 74, 0.9);
+}
+div.container main div.work header, div.container main div.play header, div.container main div.study header, div.container main div.exercise header, div.container main div.social header, div.container main div.selfCare header {
+  background-color: #ff8c66;
+  border-radius: 18px;
+  width: 280px;
+  margin-top: -48px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1em;
+  position: absolute;
+  z-index: -1;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+div.container main div.work div.containerTitle, div.container main div.play div.containerTitle, div.container main div.study div.containerTitle, div.container main div.exercise div.containerTitle, div.container main div.social div.containerTitle, div.container main div.selfCare div.containerTitle {
+  color: #bdc1ff;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.5em;
+}
+div.container main div.work div.containerTitle p, div.container main div.play div.containerTitle p, div.container main div.study div.containerTitle p, div.container main div.exercise div.containerTitle p, div.container main div.social div.containerTitle p, div.container main div.selfCare div.containerTitle p {
+  padding-right: 4.5em;
+}
+div.container main div.work div.containerTitle a, div.container main div.play div.containerTitle a, div.container main div.study div.containerTitle a, div.container main div.exercise div.containerTitle a, div.container main div.social div.containerTitle a, div.container main div.selfCare div.containerTitle a {
+  opacity: 0.7;
+}
+div.container main div.work div.containerTitle a:hover, div.container main div.play div.containerTitle a:hover, div.container main div.study div.containerTitle a:hover, div.container main div.exercise div.containerTitle a:hover, div.container main div.social div.containerTitle a:hover, div.container main div.selfCare div.containerTitle a:hover {
+  opacity: 1;
+}
+div.container main div.work p.hours, div.container main div.play p.hours, div.container main div.study p.hours, div.container main div.exercise p.hours, div.container main div.social p.hours, div.container main div.selfCare p.hours {
+  color: #bdc1ff;
+  font-weight: 300;
+  font-size: 3.5rem;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+}
+div.container main div.work p.time, div.container main div.play p.time, div.container main div.study p.time, div.container main div.exercise p.time, div.container main div.social p.time, div.container main div.selfCare p.time {
+  color: #bdc1ff;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.5em 0 2em 2em;
+}
+div.container main div.work {
+  grid-area: b1;
+}
+div.container main div.work header {
+  background-color: #ff8c66;
+}
+div.container main div.play {
+  grid-area: c1;
+}
+div.container main div.play header {
+  background-color: #56c2e6;
+}
+div.container main div.study {
+  grid-area: d1;
+}
+div.container main div.study header {
+  background-color: #ff5c7c;
+}
+div.container main div.exercise {
+  grid-area: e2;
+}
+div.container main div.exercise header {
+  background-color: #4acf81;
+  height: 10%;
+}
+div.container main div.social {
+  grid-area: f2;
+}
+div.container main div.social header {
+  background-color: #7536d3;
+}
+div.container main div.selfCare {
+  grid-area: g2;
+}
+div.container main div.selfCare header {
+  background-color: #f1c65b;
+}
+div.container .attribution {
+  font-size: 20px;
+  text-align: center;
+  margin-top: -40px;
+}
+div.container .attribution a {
+  color: #fff;
+}
+
+@media (max-width: 1320px) {
+  div.container main {
+    display: grid;
+    grid-template-areas: "a1" "b1" "c1" "d1" "e2" "f2" "g2";
+  }
+  div.container main div.profileMenu {
+    grid-area: a1;
+    width: 320px;
+    height: 240px;
+    margin-bottom: 1em;
+  }
+  div.container main div.profileMenu header {
+    display: flex;
+    padding-right: 8em;
+  }
+  div.container main div.profileMenu header img.profile {
+    width: 40%;
+    height: 40%;
+    display: inline;
+    border: 1px solid #bdc1ff;
+    border-radius: 45px;
+  }
+  div.container main div.profileMenu header div.responsive {
+    display: block;
+    padding-left: 1.5em;
+    padding-top: -10em;
+  }
+  div.container main div.profileMenu header div.responsive p.text {
+    display: inline;
+    font-size: 0.9rem;
+  }
+  div.container main div.profileMenu header div.responsive h1.name {
+    font-size: 1.2rem;
+  }
+  div.container main div.profileMenu nav ul {
+    display: flex;
+    padding: 1.2em;
+    margin-top: -0.5em;
+  }
+  div.container main div.work, div.container main div.play, div.container main div.study, div.container main div.exercise, div.container main div.social, div.container main div.selfCare {
+    background-color: #1c1f4a;
+    width: 320px;
+    height: 120px;
+    border-radius: 18px;
+    margin-bottom: 1em;
+  }
+  div.container main div.work header, div.container main div.play header, div.container main div.study header, div.container main div.exercise header, div.container main div.social header, div.container main div.selfCare header {
+    width: 319px;
+  }
+  div.container main div.work div.containerTitle p.titleName, div.container main div.play div.containerTitle p.titleName, div.container main div.study div.containerTitle p.titleName, div.container main div.exercise div.containerTitle p.titleName, div.container main div.social div.containerTitle p.titleName, div.container main div.selfCare div.containerTitle p.titleName {
+    padding-bottom: 1em;
+  }
+  div.container main div.work p.hours, div.container main div.play p.hours, div.container main div.study p.hours, div.container main div.exercise p.hours, div.container main div.social p.hours, div.container main div.selfCare p.hours {
+    font-size: 2rem;
+    display: inline;
+    padding-left: 1em;
+  }
+  div.container main div.work p.time, div.container main div.play p.time, div.container main div.study p.time, div.container main div.exercise p.time, div.container main div.social p.time, div.container main div.selfCare p.time {
+    display: inline;
+  }
+  div.container main div.work {
+    grid-area: b1;
+  }
+  div.container main div.work header {
+    background-color: #ff8c66;
+  }
+  div.container main div.play {
+    grid-area: c1;
+  }
+  div.container main div.play header.headerPlay {
+    background-color: #56c2e6;
+  }
+  div.container main div.study {
+    grid-area: d1;
+  }
+  div.container main div.study header.headerStudy {
+    background-color: #ff5c7c;
+  }
+  div.container main div.exercise {
+    grid-area: e2;
+  }
+  div.container main div.exercise header.headerExercise {
+    background-color: #4acf81;
+  }
+  div.container main div.social {
+    grid-area: f2;
+  }
+  div.container main div.social header.headerSocial {
+    background-color: #7536d3;
+  }
+  div.container main div.selfCare {
+    grid-area: g2;
+  }
+  div.container main div.selfCare header.headerSelfCare {
+    background-color: #f1c65b;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,10 @@
+@mixin card($color, $borderRadius, $width:'', $height:'',) {
+    background-color: $color;
+
+    @if $width != '' and $height != '' {
+        width: $width;
+        height: $height;
+    }
+    
+    border-radius: $borderRadius;
+}

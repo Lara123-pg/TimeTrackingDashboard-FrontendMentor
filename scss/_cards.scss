@@ -1,0 +1,195 @@
+@import 'variables';
+
+div.container {
+    overflow: hidden;
+
+    main{  
+        display: grid;
+        grid-template-areas: 'a1 b1 c1 d1'
+                             'a1 e2 f2 g2';
+
+        div.profileMenu {
+            @include card($color1, 18px, 300px, 610px);
+
+            margin-right: 2em;
+
+            grid-area: a1;
+
+            header {
+                @include headerStyle($color2, 18px);
+
+                padding: 2em;
+
+                img.profile {
+                    width: 55%;
+
+                    border: 4px solid $color3;
+
+                    border-radius: 75px;
+                }
+
+                p.text {
+                    @include colorFont($color3, 300);
+
+                    padding-top: 3em;
+                }
+
+                h1.name {
+                    @include colorFont($color3, 500);
+
+                    font-size: 2rem;
+
+                    padding-bottom: 2em;
+                }
+            }
+
+            nav ul{
+                padding: 1.2em;
+
+                li {
+                    list-style: none;
+
+                    padding: 0.7em;
+
+                    a{
+                        @include colorFont($color4, 300);
+                        text-decoration: none;
+
+                        &:hover {
+                            @include colorFont($color3, 500);
+                        }
+                    }
+
+                    a.selected {
+                        @include colorFont($color3, 500);
+                    }
+                }
+            }
+        }
+        
+        padding: 2.9em;
+        
+        div.work, div.play, div.study, div.exercise, div.social, div.selfCare {
+            @include card($color1, 18px, 280px, 210px);
+
+            margin-top: 50px;
+
+            cursor: pointer;
+
+            &:hover {
+               background: rgba(28, 31, 74, 0.9);
+            }
+
+            header {
+                @include headerStyle($work, 18px, 280px, -48px);
+
+                display: flex;
+                justify-content: flex-end;
+
+                padding-right: 1em;
+
+                position: absolute;
+                z-index: -1;
+
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            div.containerTitle {
+                @include colorFont($color3, 500);
+
+                display: flex;
+                justify-content: space-around;
+
+                padding-top: 1.5em;
+
+                p {
+                    padding-right: 4.5em;
+                }
+
+                a {
+                    opacity: 0.7;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            p.hours {
+                @include colorFont($color3, 300);
+
+                font-size: 3.5rem;
+
+                padding-left: 0.5em;
+                padding-top: 0.5em;
+            }
+
+            p.time {
+                @include colorFont($color3, 300);
+
+                font-size: 1rem;
+
+                padding: 0.5em 0 2em 2em;
+            }
+        }
+
+        div.work {
+            grid-area: b1;
+
+            header {
+                @include specificHeader($work);
+            }
+        }
+
+        div.play {
+            grid-area: c1;
+
+            header {
+                @include specificHeader($play);
+            }
+        }
+
+        div.study {
+            grid-area: d1;
+
+            header {
+                @include specificHeader($study);
+            }
+        }
+
+        div.exercise {
+            grid-area: e2;
+
+            header {
+                @include specificHeader($exercise);
+
+                height: 10%;
+            }
+        }
+
+        div.social {
+            grid-area: f2;
+
+            header {
+                @include specificHeader($social);
+            }
+        }
+
+        div.selfCare {
+            grid-area: g2;
+
+            header {
+                @include specificHeader($selfCare);
+            }
+        }
+    }
+
+    .attribution { font-size: 20px; text-align: center; margin-top: -40px;}
+    .attribution a { color: #fff; }
+}
+
+@import 'responsive';
+
+
+
