@@ -17,6 +17,8 @@ div.container {
 
             grid-area: a1;
 
+            margin-top: 1em;
+
             header {
                 @include headerStyle($color2, 18px);
 
@@ -72,7 +74,7 @@ div.container {
         div.work, div.play, div.study, div.exercise, div.social, div.selfCare {
             @include card($color1, 18px, 280px, 210px);
 
-            margin-top: 50px;
+            margin-top: 80px;
 
             cursor: pointer;
 
@@ -185,7 +187,7 @@ div.container {
         }
     }
 
-    .attribution { font-size: 20px; text-align: center; margin-top: -40px;}
+    .attribution { font-size: 20px; text-align: center; margin-top: -10px;}
     .attribution a { color: #fff; }
 }
 

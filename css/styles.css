@@ -25,6 +25,7 @@ div.container main div.profileMenu {
   border-radius: 18px;
   margin-right: 2em;
   grid-area: a1;
+  margin-top: 1em;
 }
 div.container main div.profileMenu header {
   background-color: #5847eb;
@@ -72,7 +73,7 @@ div.container main div.work, div.container main div.play, div.container main div
   width: 280px;
   height: 210px;
   border-radius: 18px;
-  margin-top: 50px;
+  margin-top: 80px;
   cursor: pointer;
 }
 div.container main div.work:hover, div.container main div.play:hover, div.container main div.study:hover, div.container main div.exercise:hover, div.container main div.social:hover, div.container main div.selfCare:hover {
@@ -160,7 +161,7 @@ div.container main div.selfCare header {
 div.container .attribution {
   font-size: 20px;
   text-align: center;
-  margin-top: -40px;
+  margin-top: -10px;
 }
 div.container .attribution a {
   color: #fff;
